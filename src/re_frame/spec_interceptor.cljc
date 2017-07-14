@@ -1,4 +1,4 @@
-(ns spec-interceptor
+(ns re-frame.spec-interceptor
   (:require [clojure.spec.alpha :as s]))
 
 (defn spec-interceptor
