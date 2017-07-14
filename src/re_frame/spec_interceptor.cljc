@@ -4,6 +4,7 @@
 (defn spec-interceptor
   [spec f]
   {:id :spec
+   :before nil
    :after (fn spec-validation
             [context]
             (let [event (get-in context [:coeffects :event])
