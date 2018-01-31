@@ -1,4 +1,4 @@
-(defproject fun.mike/re-frame-spec-interceptor "0.0.1-SNAPSHOT"
+(defproject fun.mike/re-frame-spec-interceptor "0.0.1"
   :description "A spec interceptor for re-frame."
   :url "http://github.com/mike706574/re-frame-spec-interceptor"
   :license {:name "Eclipse Public License"
