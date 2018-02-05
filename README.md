@@ -1,5 +1,7 @@
 # re-frame-spec-interceptor
 
+[![Clojars Project](https://img.shields.io/clojars/v/fun.mike/re-frame-spec-interceptor.svg)](https://clojars.org/fun.mike/re-frame-spec-interceptor)
+
 A re-frame spec interceptor.
 
 ## Copyright and License
