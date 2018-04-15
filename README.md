@@ -4,7 +4,7 @@
 
 A re-frame spec interceptor.
 
-# Build
+## Build
 
 [![CircleCI](https://circleci.com/gh/mike706574/re-frame-spec-interceptor.svg?style=svg)](https://circleci.com/gh/mike706574/re-frame-spec-interceptor)
 
