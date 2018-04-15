@@ -4,6 +4,10 @@
 
 A re-frame spec interceptor.
 
+# Build
+
+[![CircleCI](https://circleci.com/gh/mike706574/re-frame-spec-interceptor.svg?style=svg)](https://circleci.com/gh/mike706574/re-frame-spec-interceptor)
+
 ## Copyright and License
 
 The use and distribution terms for this software are covered by the
