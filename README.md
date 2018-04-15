@@ -4,6 +4,35 @@
 
 A re-frame spec interceptor.
 
+## Example
+
+
+```clojure
+(require [fun.mike.re-frame.spec-interceptor :refer [spec-interceptor]])
+
+;; Write a handler for app state validation error
+(defn handle-invalid-db
+  [db event data]
+  (merge db {:status :error
+             :data data
+             :event :event}))
+
+;; Create a spec for app state
+(s/def :example/status #{:ok :error})
+(s/def :example/text string?)
+(s/def :example/db (s/keys :req-un [:example/status :example/name])
+
+;; Build the interceptor
+(def db-interceptor (spec-interceptor :example/db handle-invalid-db))
+
+;; Use the interceptor when registering event handlers
+(reg-event-db
+ :set-text
+ [db-interceptor]
+ (fn [db [_ text]]
+   (assoc db :text text)))
+```
+
 ## Build
 
 [![CircleCI](https://circleci.com/gh/mike706574/re-frame-spec-interceptor.svg?style=svg)](https://circleci.com/gh/mike706574/re-frame-spec-interceptor)
