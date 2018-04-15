@@ -20,7 +20,7 @@ A re-frame spec interceptor.
 ;; Create a spec for app state
 (s/def :example/status #{:ok :error})
 (s/def :example/text string?)
-(s/def :example/db (s/keys :req-un [:example/status :example/name])
+(s/def :example/db (s/keys :req-un [:example/status :example/text])
 
 ;; Build the interceptor
 (def db-interceptor (spec-interceptor :example/db handle-invalid-db))
